@@ -46,6 +46,7 @@ function App() {
       style={{display:'flex',cursor:'pointer',flexDirection:'start',backgroundColor:'red',borderRadius:'5px',marginTop:'10px',marginLeft:'10px',color:'white',border:'none',fontWeight:'bold'}}>
         Play Game
         </button>
+        <section style={{marginBottom:'800px'}}>
       <h1 style={h1Style}>
         <FaGifts style={{ color: 'red' }} />
         <FaGifts style={{ color: 'green' }} />
@@ -58,14 +59,15 @@ function App() {
           <div key={index}>{generateColoredSpans(visibleWord)}</div>
         ))}
       </h1>
-          
+      </section>
       {animationComplete && (
         <>
                   {/* i need this in a single section */}
-
+          <section style={{marginBottom:'800px'}}>
           <div className="fake-gallery">
             <img className="fake-photo" src={img} alt="Fake Photo" />
           </div>
+          </section>
           {/* i need this in a single section */}
 
           <h1 style={{ color: 'green' }}>{generateColoredSpans("Thanks, that's it!")}</h1>
