@@ -1,0 +1,27 @@
+/* src/components/Footer.css */
+.footer {
+  background: linear-gradient(to top, #7c7b7b, transparent);    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer p {
+    margin: 0;
+  }
+  
+  .bt {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin-left: 10px;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  .bt:hover {
+    color: #ffd700; /* Change to your preferred hover color */
+  }
+  

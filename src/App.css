@@ -7,6 +7,16 @@
   pointer-events: none;
 }
 
+      
+        .fake-gallery {
+            display: inline-block;
+        }
+
+        .fake-photo {
+            width: 400px; /* Adjust the width as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
