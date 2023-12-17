@@ -28,7 +28,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="left">
-        <p>&copy; 2023
+        <p style={{fontWeight:'bold'}}>&copy; 2023
              <span style={{color:color, cursor:'pointer'}} onClick={handleMyInstagramClick}><FaInstagram style={{paddingTop:'1px',paddingRight:'2px',paddingLeft:'2px', wordSpacing:'2px'}}/>JeanPaulllM</span>. All rights reserved.</p>
       </div>
      

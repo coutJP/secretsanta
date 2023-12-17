@@ -62,8 +62,11 @@ function App() {
           <h1 style={{ color: 'green' }}>{generateColoredSpans("Thanks, that's it!")}</h1>
         </>
       )}
-
+{
+    animationComplete &&(
       <Footer/>
+      )
+}
     </div>
   );
 }
