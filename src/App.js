@@ -40,6 +40,12 @@ function App() {
 
   return (
     <div className="App">
+      <button 
+        onClick={() => window.location.href = 'https://www.crazygames.com/game/winter-clash-3d'}
+
+      style={{display:'flex',cursor:'pointer',flexDirection:'start',backgroundColor:'red',borderRadius:'5px',marginTop:'10px',marginLeft:'10px',color:'white',border:'none',fontWeight:'bold'}}>
+        Play Game
+        </button>
       <h1 style={h1Style}>
         <FaGifts style={{ color: 'red' }} />
         <FaGifts style={{ color: 'green' }} />
@@ -52,12 +58,15 @@ function App() {
           <div key={index}>{generateColoredSpans(visibleWord)}</div>
         ))}
       </h1>
-
+          
       {animationComplete && (
         <>
+                  {/* i need this in a single section */}
+
           <div className="fake-gallery">
             <img className="fake-photo" src={img} alt="Fake Photo" />
           </div>
+          {/* i need this in a single section */}
 
           <h1 style={{ color: 'green' }}>{generateColoredSpans("Thanks, that's it!")}</h1>
         </>
